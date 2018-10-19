@@ -1,0 +1,25 @@
+{
+  "name": "npm-yarn-prueba",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/chalo2812/npm-yarn-prueba.git",
+  "author": "Gonzalo Sola <gfsola@afip.gob.ar>",
+  "license": "MIT",
+  "dependencies": {
+    "gestalt": "0.18.0",
+    "react": "^15.4.1",
+    "react-bash": "^1.4.3",
+    "react-dnd": "^2.1.4",
+    "react-dnd-html5-backend": "^2.1.2",
+    "react-dom": "^15.4.1",
+    "react-modal": "^1.2.0",
+    "react-motion": "^0.4.2",
+    "react-redux": "^5.0.2",
+    "react-router": "^2.7.0",
+    "react-scroll": "^1.0.17",
+    "react-slick": "^0.12.2",
+    "react-sparklines": "^1.4.2",
+    "react-sticky-position": "^2.0.0",
+    "yarn": "1.10.1"
+  }
+}

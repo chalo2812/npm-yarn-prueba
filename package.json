@@ -7,19 +7,25 @@
   "license": "MIT",
   "dependencies": {
     "gestalt": "0.18.0",
-    "react": "^15.4.1",
+    "jquery": "^1.8.0",
+    "react": "^16.0.0",
     "react-bash": "^1.4.3",
     "react-dnd": "^2.1.4",
     "react-dnd-html5-backend": "^2.1.2",
-    "react-dom": "^15.4.1",
-    "react-modal": "^1.2.0",
+    "react-dom": "^16.5.2",
+    "react-modal": "^3.6.1",
     "react-motion": "^0.4.2",
-    "react-redux": "^5.0.2",
-    "react-router": "^2.7.0",
+    "react-redux": "^5.0.7",
+    "react-router": "^2.8.1",
     "react-scroll": "^1.0.17",
-    "react-slick": "^0.12.2",
+    "react-slick": "^0.12.5",
     "react-sparklines": "^1.4.2",
     "react-sticky-position": "^2.0.0",
-    "yarn": "1.10.1"
+    "redux": "^4.0.0-0",
+    "yarn": "1.10.1",
+    "lodash": "^4.16.2"
+  },
+  "devDependencies": {
+    "jest-cli": "15.1.1"
   }
 }

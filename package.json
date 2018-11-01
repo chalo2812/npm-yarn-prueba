@@ -5,9 +5,26 @@
   "repository": "https://github.com/chalo2812/npm-yarn-prueba.git",
   "author": "Gonzalo Sola <gfsola@afip.gob.ar>",
   "license": "MIT",
+  "scripts": {
+    "dev": "node build/dev-server.js",
+    "unit": "karma start test/unit/karma.conf.js --single-run",
+    "e2e": "node test/e2e/runner.js",
+    "test": "npm run unit && npm run e2e",
+    "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs",
+    "publish:clean": "rimraf publish",
+    "publish:build": "npm run publish:clean && cross-env NODE_ENV=production webpack --progress --hide-modules --config  webpack.config.js && cross-env NODE_ENV=production webpack --progress --hide-modules --config  webpack.config_min.js"
+  },
   "dependencies": {
+    "check-versions": "^1.0.0",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.7.0",
+    "express": "^4.16.4",
     "gestalt": "0.18.0",
+    "http-proxy-middleware": "^0.19.0",
     "jquery": "^3.0.0",
+    "karma": "^3.0.0",
+    "lodash": "^4.16.2",
+    "opn": "^5.4.0",
     "react": "^16.0.0",
     "react-bash": "^1.4.3",
     "react-dnd": "^2.1.4",
@@ -22,8 +39,10 @@
     "react-sparklines": "^1.4.2",
     "react-sticky-position": "^2.0.0",
     "redux": "^4.0.0-0",
-    "yarn": "1.10.1",
-    "lodash": "^4.16.2"
+    "webpack": "^4.21.0",
+    "webpack-dev-middleware": "^3.4.0",
+    "webpack-hot-middleware": "^2.24.3",
+    "yarn": "1.10.1"
   },
   "devDependencies": {
     "jest-cli": "15.1.1"

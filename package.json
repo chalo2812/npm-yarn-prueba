@@ -7,7 +7,6 @@
   "license": "MIT",
   "scripts": {
     "dev": "node build/dev-server.js",
-    "unit": "karma start test/unit/karma.conf.js --single-run",
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
@@ -38,6 +37,7 @@
     "react-sparklines": "^1.4.2",
     "react-sticky-position": "^2.0.0",
     "redux": "^4.0.0-0",
+    "unit": "0.0.1-alpha",
     "webpack": "^4.21.0",
     "webpack-dev-middleware": "^3.4.0",
     "webpack-hot-middleware": "^2.24.3",
